@@ -1,15 +1,4 @@
-doctype html
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    script(type = 'text/javascript', src='/javascripts/EventDispatcher.js')
-    script(type = 'text/javascript', src='/javascripts/Tween.js')
-    script(type = 'text/javascript', src='/javascripts/CSSPlugin.js')
-    script(type = 'text/javascript', src='/javascripts/Ease.js')
-    script(type = 'text/javascript', src='/javascripts/easeljs-NEXT.min.js')
-    script.
-       function init() {
+ function init() {
             if (window.top != window) {
                         document.getElementById("header").style.display = "none";
             }
@@ -49,24 +38,29 @@ html
                         }else if(count >39 && count <= 49){
                           var e = 35 + (Math.random() * ((50 - 35) + 1));
 
-                        var x = window.innerWidth/2+Math.cos(18*count)*e;
+			    var x = window.innerWidth/2+Math.cos(18*count)*e;
                         var y = window.innerHeight/2+Math.sin(18*count)*e;
 
-            }else if(count >49 && count <=55){
+			    }else if(count >49 && count <=55){
                         var e = 13 + (Math.random() * ((20 - 13) + 1));
 
-            var x = window.innerWidth/2+Math.cos(count)*e;
+				var x = window.innerWidth/2+Math.cos(count)*e;
                         var y = window.innerHeight/2+Math.sin(count)*e;
                       }
 
-                        createjs.Tween.get(box, {loop:false}, true).wait(Math.random()*1000+1|0).to({top:y,left:x,width:11,height:11,opacity:1},Math.random()*1500+1000,easeIn);
+createjs.Tween.get(box, {loop:false}, true).wait(Math.random()*1000+1|0).to({top:y,left:x,wi\
+dth:11,height:11,opacity:1},Math.random()*1500+1000,easeIn);
                         box.style.webkitTransform = "rotate("+Math.PI/4+"rad)";
                 }
         }
+
+
+
         // very simple easing equation:
+
+
         function easeIn(ratio) {
                 return ratio*ratio;
         }
-   
-  body(onload="init();")!= body
-    block content
+
+
