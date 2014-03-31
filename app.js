@@ -9,6 +9,15 @@ var bodyParser = require('body-parser');
 var routes = require('./routes');
 var users = require('./routes/user');
 
+//var event = require('./public/javascripts/Event.js');
+//var eventdisp = require('./public/javascripts/EventDispatcher.js');
+///var tween = require('./public/javascripts/Tween.js');
+//var cssplugin = require('./public/javascripts/CSSPlugin.js');
+//var ease = require('./public/javascripts/Ease.js');
+//var easel = require('./public/javascripts/easeljs-NEXT.min.js');
+//var anim = require('./public/javascripts/animation.js');
+
+
 var app = express();
 
 // view engine setup

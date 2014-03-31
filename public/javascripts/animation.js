@@ -48,13 +48,11 @@
                         var y = window.innerHeight/2+Math.sin(count)*e;
                       }
 
-createjs.Tween.get(box, {loop:false}, true).wait(Math.random()*1000+1|0).to({top:y,left:x,wi\
-dth:11,height:11,opacity:1},Math.random()*1500+1000,easeIn);
+createjs.Tween.get(box, {loop:false}, true).wait(Math.random()*1000+1|0).to({top:y,left:x,width:11,height:11,opacity:1},Math.random()*1500+1000,easeIn);
                         box.style.webkitTransform = "rotate("+Math.PI/4+"rad)";
                 }
+      
         }
-
-
 
         // very simple easing equation:
 
